@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comentarios - Torke UY</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    header {
+      background-color: #283035;
+      color: white;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .volver-btn {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #283035;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .volver-btn:hover {
+      background-color: #1f262b;
+    }
+    #disqus_thread {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Comentarios</h1>
+  </header>
+
+  <div id="disqus_thread"></div>
+
+  <a href="index.html" class="volver-btn">Volver al inicio</a>
+
+  <script>
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = window.location.pathname;
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://torkeuy.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>
+    Por favor habilita JavaScript para ver los
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentarios de Disqus</a>.
+  </noscript>
+</body>
+</html>

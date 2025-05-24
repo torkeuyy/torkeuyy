@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equipo Torke UY</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #283035;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header img {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Contenedor para los integrantes */
+    .integrantes-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Cada integrante */
+    .integrante {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      max-width: 300px;
+      flex: 1 1 250px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+
+    .integrante:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .integrante img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .integrante h3 {
+      margin: 10px 0 5px;
+    }
+
+    .integrante p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .integrante a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .integrante a:hover {
+      text-decoration: underline;
+    }
+
+    .volver-btn {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #283035;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .volver-btn:hover {
+      background-color: #1f262b;
+    }
+
+    @media (min-width: 600px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      header h1 {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="imagenes/logo.png" alt="Logo" />
+    <h1>Nuestro Equipo</h1>
+  </header>
+
+  <div class="integrantes-container">
+    <div class="integrante">
+      <img src="imagenes/Jona.jpg" alt="Jona" />
+      <h3>Jona</h3>
+      <p>Diseñador Gráfico, Desarrollador Web y Líder del Grupo</p>
+      <a href="https://instagram.com/47.silvaa" target="_blank">@47.silvaa</a>
+    </div>
+
+    <div class="integrante">
+      <img src="imagenes/Alan.png" alt="Alan" />
+      <h3>Alan</h3>
+      <p>Logo Maker</p>
+      <a href="https://instagram.com/77.daasilva" target="_blank">@77.daasilva</a>
+    </div>
+
+    <div class="integrante">
+      <img src="imagenes/Lautaro.png" alt="Lautaro" />
+      <h3>Lautaro</h3>
+      <p>Redes Sociales</p>
+      <a href="https://instagram.com/79lautaaro" target="_blank">@79lautaaro</a>
+    </div>
+
+    <div class="integrante">
+      <img src="imagenes/Enzo.png" alt="Enzo" />
+      <h3>Enzo</h3>
+      <p>Coordinador del Equipo</p>
+      <a href="https://instagram.com/enzito_gariazzo5" target="_blank">@enzito_gariazzo5</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="volver-btn">
+    Volver al inicio
+  </a>
+</body>
+</html>
