@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camiseta Trueno - Torke UY</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .producto-detalle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .producto-detalle img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .producto-info {
+      max-width: 500px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .producto-detalle {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+      }
+
+      .producto-info {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" />
+  </header>
+
+  <main class="producto-detalle">
+    <img src="imagenes/trueno.png" alt="Camiseta Trueno" />
+    <div class="producto-info">
+      <h2>Camiseta Trueno</h2>
+      <p><strong>Precio:</strong> $799</p>
+      <p>Una camiseta urbana con diseño inspirado en el estilo de Trueno. Ideal para destacar con flow en cualquier ocasión.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 TorkeUy</p>
+  </footer>
+</body>
+</html>
