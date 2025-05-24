@@ -127,4 +127,19 @@ footer {
   }
 }
 
+.comprar-btn {
+  display: inline-block;
+  margin: 15px auto 40px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.comprar-btn:hover {
+  background-color: #005fa3;
+}
 
