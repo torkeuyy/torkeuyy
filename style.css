@@ -189,4 +189,38 @@ form input, form textarea {
   box-sizing: border-box;
 }
 
+/* Modo oscuro automático */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #e0e0e0;
+  }
+
+  header {
+    background: #1c1c1c;
+  }
+
+  nav ul li a {
+    color: #ddd;
+  }
+
+  .product-card {
+    background: #222;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  button, .comprar-btn {
+    background-color: #444;
+    color: #eee;
+  }
+
+  button:hover, .comprar-btn:hover {
+    background-color: #666;
+  }
+
+  footer {
+    background: #1c1c1c;
+    color: #aaa;
+  }
+}
 
