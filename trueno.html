@@ -36,6 +36,12 @@
         text-align: left;
       }
     }
+
+    /* Para separar el contenedor de botones */
+    .botones-final {
+      text-align: center;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
@@ -49,31 +55,18 @@
       <h2>Camiseta Trueno</h2>
       <p><strong>Precio:</strong> $799</p>
       <p>Una camiseta urbana con diseño inspirado en el artista famoso de argentina "Trueno"<br>Trueno es un rapero y freestyler argentino reconocido por su energía en el escenario y letras que mezclan crítica social y estilo callejero. Se hizo famoso en batallas de freestyle y luego lanzó varios álbumes exitosos que lo posicionaron como una figura clave del rap en Latinoamérica.</p>
+
+      <div class="botones-final">
+        <a href="index.html" class="volver-btn"
+           onmouseover="this.style.backgroundColor='#1f262b'"
+           onmouseout="this.style.backgroundColor='#283035'">
+          Volver al inicio
+        </a>
+        <a href="comprar1.html" class="comprar-btn">
+          Comprar
+        </a>
+      </div>
     </div>
-
-     <a href="index.html" style="
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #283035;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-"
-  onmouseover="this.style.backgroundColor='#1f262b'"
-  onmouseout="this.style.backgroundColor='#283035'"
->
-  Volver al inicio
-</a>
-
-<a href="comprar1.html" class="comprar-btn">
-  Comprar
-</a>
-
-
-    
   </main>
 
   <footer>
