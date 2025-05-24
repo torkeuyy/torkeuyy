@@ -127,11 +127,12 @@ footer {
   }
 }
 
+/* Modificación para que el botón Comprar tenga estilo igual al botón Volver al inicio */
 .comprar-btn {
   display: inline-block;
-  margin: 15px auto 40px;
+  margin: 15px 10px 40px;
   padding: 10px 20px;
-  background-color: #0077cc;
+  background-color: #283035;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -140,6 +141,11 @@ footer {
 }
 
 .comprar-btn:hover {
-  background-color: #005fa3;
+  background-color: #1f262b;
 }
 
+/* Contenedor para centrar los botones Volver al inicio y Comprar juntos */
+.botones-final {
+  text-align: center;
+  margin-top: 20px;
+}
