@@ -199,10 +199,34 @@ footer {
   color: black;
 }
 
-form input, form textarea {
+form input,
+form textarea,
+form select {
   width: 100%;
   padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
   box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: white;
+}
+
+/* Etiquetas del formulario */
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilo para el mensaje de agradecimiento */
+#mensajeGracias {
+  display: none;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
 }
 
 /* Modo oscuro automático */
@@ -237,5 +261,21 @@ form input, form textarea {
   footer {
     background: #1c1c1c;
     color: #aaa;
+  }
+
+  .modal-content {
+    background-color: #1e1e1e;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #555;
+  }
+
+  #mensajeGracias {
+    color: #80ff80;
   }
 }
