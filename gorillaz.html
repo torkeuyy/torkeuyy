@@ -54,7 +54,9 @@
       <h2>Camiseta Gorillaz</h2>
       <p><strong>Precio:</strong> $899</p>
       <p>Camiseta inspirada en la icónica banda virtual "Gorillaz". Perfecta para fans del estilo alternativo y experimental que caracteriza sus álbumes. Combina arte y música en una prenda urbana con mucha actitud.</p>
+      <p><strong>Stock disponible:</strong> <span id="stock-cantidad"></span></p>
 
+      
       <div class="botones-final">
         <a href="index.html" class="comprar-btn">Volver al inicio</a>
         <button id="abrirModal" class="comprar-btn">Comprar</button>
@@ -106,6 +108,13 @@
     }
   };
 </script>
+
+<script src="stock.js"></script>
+<script>
+  mostrarStock('gorillaz');
+</script>
+
+  
 </body>
 </html>
 
