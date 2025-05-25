@@ -54,19 +54,35 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Layout con Grid para 4 columnas */
 .products {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
   justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsivo para menos columnas en pantallas chicas */
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
 }
 
 .product-card {
   background: white;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  width: 200px;
+  width: 100%;
   padding: 15px;
   text-align: center;
 }
@@ -223,4 +239,3 @@ form input, form textarea {
     color: #aaa;
   }
 }
-
