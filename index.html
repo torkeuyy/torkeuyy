@@ -78,37 +78,31 @@
       </div>
 
       <div class="product-card">
-  <img src="rayomqueen.png" alt="Camiseta Rayo McQueen">
-  <h3>Camiseta Rayo McQueen</h3>
-  <p>$799</p>
-  <button onclick="mostrarModal('rayomqueen')">Ver más</button>
-</div>
+        <img src="rayomqueen.png" alt="Camiseta Rayo McQueen">
+        <h3>Camiseta Rayo McQueen</h3>
+        <p>$799</p>
+        <button onclick="mostrarModal('rayomqueen')">Ver más</button>
+      </div>
 
-<div class="product-card">
-  <img src="hondarosa.png" alt="Camiseta Honda Rosa">
-  <h3>Camiseta Honda Rosa</h3>
-  <p>$799</p>
-  <button onclick="mostrarModal('hondarosa')">Ver más</button>
-</div>
+      <div class="product-card">
+        <img src="hondarosa.png" alt="Camiseta Honda Rosa">
+        <h3>Camiseta Honda Rosa</h3>
+        <p>$799</p>
+        <button onclick="mostrarModal('hondarosa')">Ver más</button>
+      </div>
 
-<div class="product-card">
-  <img src="nissanazul.png" alt="Camiseta Nissan Azul">
-  <h3>Camiseta Nissan Skyline</h3>
-  <p>$799</p>
-  <button onclick="mostrarModal('nissanazul')">Ver más</button>
-</div>
-
-
+      <div class="product-card">
+        <img src="nissanazul.png" alt="Camiseta Nissan Azul">
+        <h3>Camiseta Nissan Skyline</h3>
+        <p>$799</p>
+        <button onclick="mostrarModal('nissanazul')">Ver más</button>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>© 2025 TorkeUy</p>
-
-    <a href="https://www.instagram.com/torke.uy" target="_blank">
-      @torke.uy
-    </a>
-    
+    <a href="https://www.instagram.com/torke.uy" target="_blank">@torke.uy</a>
   </footer>
 
   <div style="text-align: center; margin: 40px 0;">
@@ -127,5 +121,71 @@
       Ver Testimonios
     </a>
   </div>
+
+  <!-- MODALES -->
+
+  <!-- Modal Rayo McQueen -->
+  <div id="modal-rayomqueen" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('rayomqueen')">&times;</span>
+      <h2>Comprar Camiseta Rayo McQueen</h2>
+      <form action="https://formspree.io/f/xyzwaqrz" method="POST">
+        <input type="hidden" name="producto" value="Camiseta Rayo McQueen" />
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="text" name="direccion" placeholder="Dirección de envío" required />
+        <input type="number" name="telefono" placeholder="Número de contacto" required />
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Honda Rosa -->
+  <div id="modal-hondarosa" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('hondarosa')">&times;</span>
+      <h2>Comprar Camiseta Honda Rosa</h2>
+      <form action="https://formspree.io/f/xyzwaqrz" method="POST">
+        <input type="hidden" name="producto" value="Camiseta Honda Rosa" />
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="text" name="direccion" placeholder="Dirección de envío" required />
+        <input type="number" name="telefono" placeholder="Número de contacto" required />
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Nissan Azul -->
+  <div id="modal-nissanazul" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('nissanazul')">&times;</span>
+      <h2>Comprar Camiseta Nissan Skyline</h2>
+      <form action="https://formspree.io/f/xyzwaqrz" method="POST">
+        <input type="hidden" name="producto" value="Camiseta Nissan Skyline" />
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="text" name="direccion" placeholder="Dirección de envío" required />
+        <input type="number" name="telefono" placeholder="Número de contacto" required />
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function mostrarModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+    }
+
+    function cerrarModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    };
+  </script>
 </body>
 </html>
