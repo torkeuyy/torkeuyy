@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camiseta Honda S2000 - Torke UY</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .producto-detalle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .producto-detalle img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .producto-info {
+      max-width: 500px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .producto-detalle {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+      }
+
+      .producto-info {
+        text-align: left;
+      }
+    }
+
+    .botones-final {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" />
+  </header>
+
+  <main class="producto-detalle">
+    <img src="hondarosa.png" alt="Camiseta Honda S2000" />
+    <div class="producto-info">
+      <h2>Camiseta Honda S2000</h2>
+      <p><strong>Precio:</strong> $799</p>
+      <p>Una camiseta inspirada en el auto Honda S2000 Rosa</p>
+      <p><strong>Stock disponible:</strong> <span id="stock-cantidad"></span></p>
+      
+      <div class="botones-final">
+        <a href="index.html" class="comprar-btn">Volver al inicio</a>
+        <button id="abrirModal" class="comprar-btn">Comprar</button>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 TorkeUy</p>
+  </footer>
+
+<!-- Modal de compra -->
+<div id="modalCompra" class="modal">
+  <div class="modal-content">
+    <span class="close" id="cerrarModal">&times;</span>
+    <h2>Formulario de compra</h2>
+    <form action="https://formspree.io/f/xyzwaqrz" method="POST" id="formCompra">
+      <label for="nombre">Nombre:</label><br/>
+      <input type="text" id="nombre" name="nombre" required /><br/><br/>
+      
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="_replyto" required /><br/><br/>
+      
+      <label for="mensaje">Mensaje:</label><br/>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br/><br/>
+
+      <label for="talle">Tamaño:</label><br/>
+<select id="talle" name="talle" required>
+  <option value="XS">XS</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select><br/><br/>
+
+      
+      <input type="hidden" name="producto" value="Camiseta Honda S2000" />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+  <script>
+  const modal = document.getElementById('modalCompra');
+  const btnAbrir = document.getElementById('abrirModal');
+  const btnCerrar = document.getElementById('cerrarModal');
+
+  btnAbrir.onclick = () => {
+    modal.style.display = 'block';
+  };
+
+  btnCerrar.onclick = () => {
+    modal.style.display = 'none';
+  };
+
+  window.onclick = (event) => {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
+</script>
+
+<script src="stock.js"></script>
+<script>
+  mostrarStock('hondarosa');
+</script>
+
+  
+</body>
+</html>
+
 
