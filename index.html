@@ -8,7 +8,6 @@
   <link rel="icon" href="logo.png" type="image/png" />
 </head>
 <body>
-  <div class="cursor-light"></div>
 
   <header>
     <img src="logo.png" alt="Logo" />
@@ -78,8 +77,6 @@
         <p>$799</p>
         <a href="nissanazul.html"><button>Ver más</button></a>
       </div>
-
-
     </section>
   </main>
 
@@ -89,7 +86,6 @@
     <a href="https://www.instagram.com/torke.uy" target="_blank">
       @torke.uy
     </a>
-    
   </footer>
 
   <div style="text-align: center; margin: 40px 0;">
@@ -108,5 +104,17 @@
       Ver Testimonios
     </a>
   </div>
+
+  <script>
+    // Crear la luz
+    const light = document.createElement('div');
+    light.className = 'cursor-light';
+    document.body.appendChild(light);
+
+    // Mover la luz con el cursor
+    window.addEventListener('mousemove', (e) => {
+      light.style.transform = `translate(${e.clientX - 75}px, ${e.clientY - 75}px)`;
+    });
+  </script>
 </body>
 </html>
