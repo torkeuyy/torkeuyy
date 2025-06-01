@@ -112,7 +112,6 @@ footer {
   margin-top: 30px;
 }
 
-/* Estilo limpio para enlaces del footer */
 footer a {
   text-decoration: none;
   color: inherit;
@@ -155,7 +154,7 @@ footer a:hover {
   }
 }
 
-/* Modificación para que el botón Comprar tenga estilo igual al botón Volver al inicio */
+/* Botón Comprar */
 .comprar-btn {
   display: inline-block;
   margin: 15px 10px 40px;
@@ -172,7 +171,6 @@ footer a:hover {
   background-color: #1f262b;
 }
 
-/* Contenedor para centrar los botones Volver al inicio y Comprar juntos */
 .botones-final {
   text-align: center;
   margin-top: 20px;
@@ -289,7 +287,9 @@ form label {
   #mensajeGracias {
     color: #80ff80;
   }
+}
 
+/* LUZ QUE SIGUE AL CURSOR */
 .cursor-light {
   position: fixed;
   top: 0;
@@ -302,6 +302,4 @@ form label {
   mix-blend-mode: overlay;
   transition: transform 0.05s linear;
   z-index: 9999;
-}
-  
 }
