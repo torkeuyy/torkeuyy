@@ -8,6 +8,8 @@
   <link rel="icon" href="logo.png" type="image/png" />
 </head>
 <body>
+  <!-- Luz que sigue al cursor -->
+  <div class="cursor-light"></div>
 
   <header>
     <img src="logo.png" alt="Logo" />
@@ -23,56 +25,49 @@
   <main>
     <section class="products">
       <div class="product-card">
-        <img src="trueno.png" alt="Trueno" />
+        <img src="trueno.png" alt="Trueno" loading="lazy" />
         <h3>Trueno</h3>
         <p>$799</p>
         <a href="trueno.html"><button>Ver más</button></a>
       </div>
-
       <div class="product-card">
-        <img src="gangster.png" alt="Gangster" />
+        <img src="gangster.png" alt="Gangster" loading="lazy" />
         <h3>Camiseta Gangster</h3>
         <p>$799</p>
         <a href="gangster.html"><button>Ver más</button></a>
       </div>
-
       <div class="product-card">
-        <img src="money.png" alt="Camiseta Frase" />
+        <img src="money.png" alt="Camiseta Frase" loading="lazy" />
         <h3>Camiseta Frase</h3>
         <p>$799</p>
         <a href="money.html"><button>Ver más</button></a>
       </div>
-
       <div class="product-card">
-        <img src="anime.png" alt="Anime" />
+        <img src="anime.png" alt="Anime" loading="lazy" />
         <h3>Camiseta Anime</h3>
         <p>$799</p>
         <a href="anime.html"><button>Ver más</button></a>
       </div>
-
       <div class="product-card">
-        <img src="motive.png" alt="Money Is The Motive" />
+        <img src="motive.png" alt="Money Is The Motive" loading="lazy" />
         <h3>Camiseta Money Is The Motive</h3>
         <p>$799</p>
         <a href="motive.html"><button>Ver más</button></a>
       </div>
-
       <div class="product-card">
-        <img src="rayomqueen.png" alt="Camiseta Rayo McQueen">
+        <img src="rayomqueen.png" alt="Camiseta Rayo McQueen" loading="lazy" />
         <h3>Camiseta Rayo McQueen</h3>
         <p>$799</p>
         <a href="rayomqueen.html"><button>Ver más</button></a>
       </div>
-
       <div class="product-card">
-        <img src="hondarosa.png" alt="Camiseta Honda S2000">
+        <img src="hondarosa.png" alt="Camiseta Honda S2000" loading="lazy" />
         <h3>Camiseta Honda S2000</h3>
         <p>$799</p>
         <a href="hondarosa.html"><button>Ver más</button></a>
       </div>
-
       <div class="product-card">
-        <img src="nissanazul.png" alt="Camiseta Nissan Skyline">
+        <img src="nissanazul.png" alt="Camiseta Nissan Skyline" loading="lazy" />
         <h3>Camiseta Nissan Skyline</h3>
         <p>$799</p>
         <a href="nissanazul.html"><button>Ver más</button></a>
@@ -82,10 +77,7 @@
 
   <footer>
     <p>© 2025 TorkeUy</p>
-
-    <a href="https://www.instagram.com/torke.uy" target="_blank">
-      @torke.uy
-    </a>
+    <a href="https://www.instagram.com/torke.uy" target="_blank">@torke.uy</a>
   </footer>
 
   <div style="text-align: center; margin: 40px 0;">
@@ -105,16 +97,7 @@
     </a>
   </div>
 
-  <script>
-    // Crear la luz
-    const light = document.createElement('div');
-    light.className = 'cursor-light';
-    document.body.appendChild(light);
-
-    // Mover la luz con el cursor
-    window.addEventListener('mousemove', (e) => {
-      light.style.transform = `translate(${e.clientX - 75}px, ${e.clientY - 75}px)`;
-    });
-  </script>
+  <!-- Agregamos el script para la luz -->
+  <script src="cursor-light.js"></script>
 </body>
 </html>
