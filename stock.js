@@ -1,3 +1,4 @@
+// STOCK DE PRODUCTOS
 const stockProductos = {
   "trueno": 0,
   "gorillaz": 0,
@@ -17,8 +18,15 @@ function mostrarStock(productoId) {
 
   if (cantidad === 0) {
     stockSpan.textContent = 'Agotado';
-    // si querés ocultar el botón de comprar:
-    // botonComprar.style.display = 'none';
-    // pero si lo querés mostrar siempre, no hagas nada.
+    // botonComprar.style.display = 'none'; // opcional
   }
 }
+
+// LUZ QUE SIGUE AL CURSOR
+const light = document.createElement('div');
+light.className = 'cursor-light';
+document.body.appendChild(light);
+
+window.addEventListener('mousemove', (e) => {
+  light.style.transform = `translate(${e.clientX - 75}px, ${e.clientY - 75}px)`;
+});
