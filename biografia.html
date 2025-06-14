@@ -4,18 +4,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Biografía – Torke UY</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo.png" type="image/png" />
 
-  <!-- Fuentes modernas -->
+  <!-- Fuente moderna -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #fafafa;
-      color: #222;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #222;
+      min-height: 100vh;
+      position: relative;
+      z-index: 1;
+      overflow-x: hidden;
+    }
+
+    /* Fondo animado */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, #f0f4f8, #ffffff, #f5f7fa);
+      background-size: 200% 200%;
+      animation: gradientMove 10s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0 10px;
+    }
+
+    header img {
+      width: 90px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
     }
 
     main {
@@ -27,7 +76,7 @@
     h1 {
       font-size: 36px;
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
       font-weight: 600;
     }
 
@@ -40,7 +89,7 @@
     p, li {
       font-size: 16px;
       margin-bottom: 16px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     ul {
@@ -67,12 +116,19 @@
       background-color: #1f262b;
     }
 
-    a {
+    footer {
+      text-align: center;
+      padding: 30px 0 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer a {
       color: #283035;
       text-decoration: none;
     }
 
-    a:hover {
+    footer a:hover {
       text-decoration: underline;
     }
   </style>
@@ -93,22 +149,22 @@
   <main>
     <h1>Sobre Torke UY</h1>
 
-    <p>Empezamos este proyecto desde Rivera con una idea clara: hacer ropa con estilo propio. Sin copiar, sin repetir lo que hacen todos. Queríamos algo diferente, con actitud, y que represente lo que vivimos y lo que nos gusta.</p>
+    <p>Torke nació en Rivera, Uruguay, con ganas de romper lo común. Empezamos diseñando camisetas con un estilo que nos represente de verdad, sin copiar a nadie. Buscamos que cada prenda tenga actitud, mensaje y presencia.</p>
 
-    <p>Diseñamos cada prenda pensando en los detalles. Nos inspiran la calle, los autos, la música y todo lo que tenga que ver con moverse distinto.</p>
+    <p>No somos una marca más. Somos una idea que crece desde lo local, desde el barrio, desde la calle. Nos mueve el diseño, el arte urbano, los autos, la música y todo lo que inspire algo distinto.</p>
 
-    <h2>Lo que nos importa</h2>
+    <h2>Lo que nos define</h2>
     <ul>
-      <li>Originalidad en los diseños</li>
-      <li>Buena calidad sin precios imposibles</li>
-      <li>Estilo callejero con personalidad</li>
+      <li>Diseños hechos con cabeza, no en masa</li>
+      <li>Estilo único, con identidad uruguaya</li>
+      <li>Comunidad que valora lo real</li>
     </ul>
 
-    <h2>¿Dónde estamos?</h2>
-    <p>Somos de Rivera, Uruguay. Pero la idea es que la marca llegue a cualquier lugar donde alguien quiera usar algo que se note que es distinto.</p>
+    <h2>¿Desde dónde trabajamos?</h2>
+    <p>Rivera, Uruguay. Pero soñamos en grande. Vamos paso a paso, pero firmes.</p>
 
     <p style="text-align: center; font-weight: 600; margin-top: 40px;">
-      Esto recién empieza. Gracias por estar acá.
+      Esto recién empieza. Gracias por apoyar algo hecho con ganas.
     </p>
 
     <div class="botones-final">
